@@ -14,11 +14,22 @@ void test_set()
 	}
 	cout << endl;
 	s.insert(114);
+	s.erase(6);
 	for (auto e : s)
 	{
 		cout << e<<" ";
 	}
 	cout << endl;
+	auto s1 = s.find(3);
+	if (s1 != s.end())
+	{
+		cout << "找到了" << endl;
+	}
+	else
+	{
+		cout << "没找到" << endl;
+	}
+	
 
 }
 int main()
