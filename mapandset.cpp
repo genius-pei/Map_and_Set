@@ -8,10 +8,18 @@ void test_set()
 	set<int>::iterator it = s.begin();
 	while (it != s.end())
 	{
+		//÷––Ú£¨≈≈–Ú£¨»•÷ÿ
 		cout << *it << " ";
 		++it;
 	}
 	cout << endl;
+	s.insert(114);
+	for (auto e : s)
+	{
+		cout << e<<" ";
+	}
+	cout << endl;
+
 }
 int main()
 {
