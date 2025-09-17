@@ -9,6 +9,13 @@ void test01()
 	pair<string, string> kv3("orange", "éÙ×Ó");
 	map<string, string> dicrtory = {kv1,kv2,kv3};
 	dicrtory.insert(make_pair("money", "ÈíÃÃ±Ò"));
+	auto it = dicrtory.begin();
+	while (it != dicrtory.end())
+	{
+		cout << (*it).first << ":" << (*it).second;
+
+	}
+	cout << endl;
 
 }
 int main()
