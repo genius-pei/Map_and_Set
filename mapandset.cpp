@@ -29,7 +29,9 @@ void test_set()
 	{
 		cout << "没找到" << endl;
 	}
-	
+	//删除[3,9]的值
+	auto it1=s.lower_bound(3);
+	auto it2 = s.upper_bound(7);
 
 }
 int main()
