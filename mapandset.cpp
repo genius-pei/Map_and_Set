@@ -4,7 +4,7 @@
 using namespace std;
 void test_set()
 {
-	set<int> s = { 1,2,5,4,3,7,6 };
+	multiset<int> s = { 1,2,5,4,3,6,6,6,7,6 };
 	set<int>::iterator it = s.begin();
 	while (it != s.end())
 	{
@@ -14,7 +14,7 @@ void test_set()
 	}
 	cout << endl;
 	s.insert(114);
-	s.erase(6);
+	s.erase(3);
 	for (auto e : s)
 	{
 		cout << e<<" ";
@@ -29,10 +29,12 @@ void test_set()
 	{
 		cout << "没找到" << endl;
 	}
-	//删除[3,9]的值
+	
 	auto it1=s.lower_bound(3);
 	auto it2 = s.upper_bound(7);
-
+	auto pos = s.find(6);
+	
+	
 }
 int main()
 {
