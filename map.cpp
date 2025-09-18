@@ -13,7 +13,7 @@ void test01()
 	while (it != dicrtory.end())
 	{
 		cout << (*it).first << ":" << (*it).second;
-
+		++it;
 	}
 	cout << endl;
 
