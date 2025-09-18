@@ -12,10 +12,15 @@ void test01()
 	auto it = dicrtory.begin();
 	while (it != dicrtory.end())
 	{
-		cout << (*it).first << ":" << (*it).second;
+		//it->second = "xyz";
+		cout << (*it).first << ":" << (*it).second << endl;
 		++it;
 	}
 	cout << endl;
+	for (auto& e : dicrtory)
+	{
+		cout << e.first << ":" << e.second << endl;
+	}
 
 }
 int main()
